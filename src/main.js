@@ -1,5 +1,5 @@
 import { FaceLandmarker, FilesetResolver, DrawingUtils } from "@mediapipe/tasks-vision";
-import { createClient } from "@supabase/supabase-js";
+import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm";
 
 // -------------------------------------------------------------------
 // 1. ตั้งค่า Supabase Connection (ใส่ค่าของคุณเองที่นี่)
