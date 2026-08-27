@@ -46,11 +46,21 @@
   <h1>Real-Time Face Detection</h1>
   <div id="status">กำลังโหลดระบบ...</div>
 
-  <div id="container">
-    <video id="webcam" autoplay playsinline></video>
-    <canvas id="output_canvas"></canvas>
-  </div>
 
+<div id="container">
+  <video id="webcam" autoplay playsinline></video>
+  <canvas id="output_canvas"></canvas>
+</div>
+
+<!-- เพิ่มปุ่มกดบันทึกตรงนี้ -->
+<div style="margin-top: 15px;">
+  <button id="captureBtn" style="padding: 10px 20px; font-size: 16px; cursor: pointer;">
+    📸 บันทึก Face Embedding
+  </button>
+</div>
+<div id="dbStatus" style="margin-top: 10px; color: yellow;"></div>
+
+  
   <script type="module" src="/src/main.js"></script>
 </body>
 </html>
