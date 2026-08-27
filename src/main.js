@@ -4,7 +4,7 @@ import { createClient } from "@supabase/supabase-js";
 // -------------------------------------------------------------------
 // 1. ตั้งค่า Supabase Connection (ใส่ค่าของคุณเองที่นี่)
 // -------------------------------------------------------------------
-const SUPABASE_URL = "https://xxxx.supabase.co"; 
+const SUPABASE_URL = "https://rvbhyuedxnzaewsqouuy.supabase.co";
 const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJ2Ymh5dWVkeG56YWV3c3FvdXV5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODc4MTk0ODIsImV4cCI6MjEwMzM5NTQ4Mn0.qE-1Ju384R5B69bej0AoaBmJEQQ4kK4F89EdntiCvVA";
 const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
