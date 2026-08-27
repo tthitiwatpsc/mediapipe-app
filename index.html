@@ -1,13 +1,56 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>my-mediapipe-app</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real-Time Face Landmarker</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #222;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    #status {
+      margin-bottom: 20px;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    #container {
+      position: relative;
+      width: 640px;
+      height: 480px;
+      background: black;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+    video, canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 640px;
+      height: 480px;
+    }
+    video, canvas {
+      transform: scaleX(-1); /* กลับด้านภาพให้เป็นกระจกเงา */
+    }
+  </style>
+</head>
+<body>
+  <h1>Real-Time Face Detection</h1>
+  <div id="status">กำลังโหลดระบบ...</div>
+
+  <div id="container">
+    <video id="webcam" autoplay playsinline></video>
+    <canvas id="output_canvas"></canvas>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
 </html>
